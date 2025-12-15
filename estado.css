@@ -1,0 +1,14 @@
+/*Color de fondo*/
+
+body{
+    background: #dddddd;
+}
+
+.container{
+    background-color: white;
+}
+
+.estado:hover{
+    color: white;
+    background-color: #1b1b32;
+}

@@ -1,0 +1,289 @@
+/*Estilos Generakes*/
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+.seccion-oscura{
+    color: white;
+    background-color: #1b1b32;
+}
+
+.seccion-titulo{
+    font-size: 2rem;
+    padding: 15px 0;
+}
+
+.seccion-texto{
+    font-size: 1.2rem;
+}
+
+.btn-primary{
+    font-size: 1.1rem;
+    margin: 20px;
+    font-weight: bold;
+}
+
+/*Barra de navegacion*/
+
+.navbar{
+    width: auto;
+    padding: 2rem;
+    background-color: #dddddd;
+}
+
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*¿Quienes Somos?*/
+.hero{
+    background-color: #f5f6f7;
+    min-height: 450px;
+    text-align: center;
+}
+
+.hero-principal{
+    padding: 3rem;
+}
+
+.hero-principal h2{
+    font-size: 1.5rem;
+    color: #615151;
+}
+
+.hero-imagen{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+
+/*Sobre Nosotros*/
+.sobre-nosotros{
+    height: 500px;
+    padding: 10px;
+}
+
+.sobre-nosotros .contenedor{
+    max-width: 600px;
+    text-align: center;
+}
+
+/*Nuestros Servicios*/
+.servicios{
+    padding: 40px;
+}
+
+.seccion-clara .columna{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2 ease-in;
+}
+
+.seccion-clara .columna:hover{
+    color: white;
+    background-color: #1b1b32;
+}
+
+.seccion-clara i{
+    font-size: 2.5rem;
+    color: deepskyblue;
+    background-color: black;
+    padding: 8px 19px;
+    border-radius: 50%;
+}
+
+.servicios-titulo{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badges-contenedor{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badge{
+    margin: 5px;
+}
+
+/*Testimonios*/
+.testimonios{
+    padding: 40px 40px 80px 40px;
+}
+
+.testimonios .carousel{
+    max-width: 800px;
+}
+
+.carousel-item{
+    height: auto;
+}
+
+.carousel-item .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonio-imagen{
+    height: 200px;
+    width: 200px;
+    margin: 10px 10px 20px 10px;
+}
+
+.testimonio-texto{
+    max-width: 70%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.testimonio-info{
+    font-weight: bold;
+    text-align: center;
+}
+
+.testimonio-info p{
+    margin-bottom: 0;
+}
+
+.testimonio-info .cliente{
+    font-size: 1.2rem;
+}
+
+.testimonio-info .cargo{
+    font-size: 0.9rem;
+    color: #656060;
+}
+
+/*contacto*/
+.contacto .container{
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
+}
+
+.contacto .rectangulo{
+    margin-top: -5rem;
+    background-color: rgb(13, 110, 253);
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 1px white;
+}
+
+.contacto .row{
+    width: 100%;
+    display: flex;
+    align-items: end;
+}
+
+.contacto .descripcion{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.contacto button{
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1.25em 2em;
+    margin: 10px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover{
+    background-color: white;
+    color: black;
+}
+
+.contacto button:hover i{
+    color: black;
+}
+
+.contacto button i{
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+}
+
+/*footer*/
+footer{
+    min-height: 500px;
+}
+
+.footer-logo{
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+
+.footer-texto{
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.iconos-redes a{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes i{
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes a:hover{
+    background-color: white;
+    border: 2px solid rgb(13, 110, 253);
+}
+
+.iconos-redes a:hover i{
+    color: black;
+}
+
+.autor{
+    font-size: 15px;
+    color: #aeaeae;
+    padding: 20px;
+}
+
+/*Barra de navegacion responsiva*/
+@media screen and (max-width:767px) {
+    .navbar-brand{
+        display: none;
+    }
+}
+
+/*Imagen hero inferior responsiva*/
+@media screen and (min-width:700px) {
+    .hero-inferior-imagen{
+        max-width: 400px;
+    }
+}
